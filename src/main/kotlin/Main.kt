@@ -1,5 +1,13 @@
+class Main {
+    private val archives =  mutableListOf<String>()
+    private val notes =  mutableListOf<Pair<String, String>>() //Одна строка для названия, вторая содержит текст заметки.
+
+    fun start() {
+        val management = Management()
+        management.manageArchives(archives, notes)
+    }
+}
 fun main() {
-    // ваш код начнется здесь
-    // вы не должны ограничиваться только классом Main и можете создавать свои классы по необходимости
-    println("Привет")
+    val noteApp = Main()
+    noteApp.start()
 }
