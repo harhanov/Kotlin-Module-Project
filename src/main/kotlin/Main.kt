@@ -7,7 +7,6 @@ class Main {
         management.manageArchives(archives, notes)
     }
 }
-
 fun main() {
     val noteApp = Main()
     noteApp.start()
